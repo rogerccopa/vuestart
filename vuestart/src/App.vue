@@ -1,4 +1,15 @@
-
+<script>
+export default {
+	data() {
+		return {
+			name: "Roger Ccopa",
+			status: false
+		}
+	}
+}
+</script>
 <template>
-	<li>Vue Jobs</li>  
+	<h1>{{ name }}</h1>
+	<br/>
+	<p v-if="status">User is active</p> 
 </template>
