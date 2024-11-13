@@ -1,11 +1,15 @@
 <script>
 	export default {
-		setup() {
-			const name = "Roger Ccopa Illapuma";
-			const status = "active";
-			const tasks = ["task one", "task two", "task 3"];
-
-			const toggleStatus = () => {
+		data() {
+			return {
+				name: "Roger Ccopa Illapuma",
+				status: "active",
+				tasks: ["task one", "task two", "task 3"],
+				link: 'https://www.google.com',
+			};
+		},
+		methods: {
+			toggleStatus() {
 				if (this.status === "active") {
 					this.status = "pending";
 				} else if (this.status === "pending") {
@@ -13,14 +17,7 @@
 				} else {
 					this.active = "active";
 				}
-			};
-
-			return {
-				name,
-				status,
-				tasks,
-				toggleStatus
-			};
+			}
 		}
 	};
 </script>
