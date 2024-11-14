@@ -1,1 +1,1 @@
-Tutorial Video At: 00:36:15
+Tutorial Video At: 00:41:20
